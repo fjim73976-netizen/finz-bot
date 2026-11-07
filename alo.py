@@ -2,7 +2,7 @@ import os
 from threading import Thread
 from flask import Flask
 
-# سيرفر وهمي لإرضاء Render
+
 app = Flask('')
 
 @app.route('/')
@@ -17,20 +17,16 @@ def keep_alive():
     t = Thread(target=run)
     t.start()
 
-# شغل السيرفر الوهمي قبل تشغيل البوت
 keep_alive()
 
-# باقي كود البوت مالتك (telebot) يبدأ من هنا جوة...
 
 
 import time
 import telebot
 
-# التوكن الخاص ببوتك
 TOKEN = "9229808034:AAFQESmcmnWNLn58qT-st_ob2J9G9Hqz5aI"
 ADMIN_CHAT_ID = 6028565929
 
-# ضبط مهلات الاتصال لترal ارتباط أقوى
 telebot.apihelper.CONNECT_TIMEOUT = 20
 telebot.apihelper.READ_TIMEOUT = 60
 
@@ -77,7 +73,6 @@ def forward_to_admin(message):
 
 print("Bot is running and listening...")
 
-# حلقة تكرار ذكية تعيد تشغيل الاتصال تلقائياً إذا انقطع بسبب النت
 while True:
   try:
     bot.infinity_polling(timeout=60, long_polling_timeout=60)

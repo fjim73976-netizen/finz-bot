@@ -2,7 +2,7 @@ import time
 import telebot
 
 # التوكن الخاص ببوتك
-TOKEN = "9229808034:AAFAf_z6QHgBeiSfPvUNT5-1Ukx6PkzTAP4"
+TOKEN = "9229808034:AAFQESmcmnWNLn58qT-st_ob2J9G9Hqz5aI"
 ADMIN_CHAT_ID = 6028565929
 
 # ضبط مهلات الاتصال لترal ارتباط أقوى
